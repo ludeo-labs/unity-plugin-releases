@@ -1,0 +1,4 @@
+<linker>
+    <assembly fullname="com.rlabrecque.steamworks.net" preserve="all"/>
+	<assembly fullname="LudeoSDK" preserve="all"/>
+</linker>
