@@ -30,13 +30,13 @@ namespace LudeoSDK.UnityScripts
         [Tooltip("Which Core dlls to build the game with.")]
         public LudeoSDKCoreDll coreDllReference = LudeoSDKCoreDll.Release;
 
-        [Tooltip("Set Beta Version")]
+        [Tooltip("Steam beta branch name this build runs on")]
         public string betaVersion = "";
 
-        [Tooltip("For development: force Ludeo to avoid using a launcher at init")]
+        [Tooltip("For development: run without a Steam client - authenticate with the Steam User Id below instead")]
         public bool runWithoutLauncher;
 
-        [Tooltip("For development: for no launcher mode - set user id")]
+        [Tooltip("For development: the Steam user id to authenticate with when running without a Steam client")]
         public string launcherUserId;
 
         [Tooltip("For development: Force no-launcher run to start with the given Ludeo ('Ludeo To Auto Start'')")]

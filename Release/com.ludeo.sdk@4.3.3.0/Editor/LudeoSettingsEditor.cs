@@ -33,7 +33,9 @@ namespace LudeoSDKUnityEditor
         public SerializedProperty ludeoToAutoStart;
         #endregion DEVELOPMENT-PARAMS
  
-        private GUIContent m_betaVersionLabel = new GUIContent("Beta Version (Optional)");
+        private GUIContent m_runWithoutLauncherLabel = new GUIContent("Run Without Steam Client");
+        private GUIContent m_steamUserIdLabel = new GUIContent("Steam User Id");
+        private GUIContent m_betaVersionLabel = new GUIContent("Beta Version Name");
         private GUIContent m_isAutoStartLudeoLabel = new GUIContent("Auto Start Ludeo (Optional)");
         private GUIContent m_ludeoToStartLabel = new GUIContent("Ludeo To Auto Start (Optional)");
 
@@ -127,10 +129,10 @@ namespace LudeoSDKUnityEditor
             LudeoLogLevel currentLogLevel = (LudeoLogLevel)ludeoLogLevel.enumValueIndex;
             DrawAndHandleCoreDllRefChange(currentLogLevel);
 
-            EditorGUILayout.PropertyField(runWithoutLauncher);
+            EditorGUILayout.PropertyField(runWithoutLauncher, m_runWithoutLauncherLabel);
             bool newLauncherChoise = runWithoutLauncher.boolValue;
             UnityEngine.GUI.enabled = newLauncherChoise;
-            EditorGUILayout.PropertyField(launcherUserId);
+            EditorGUILayout.PropertyField(launcherUserId, m_steamUserIdLabel);
             EditorGUILayout.PropertyField(betaVersion, m_betaVersionLabel);
             EditorGUILayout.PropertyField(autoStartInLudeo, m_isAutoStartLudeoLabel);
             EditorGUILayout.PropertyField(ludeoToAutoStart, m_ludeoToStartLabel);

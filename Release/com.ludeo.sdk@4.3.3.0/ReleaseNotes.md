@@ -1,4 +1,12 @@
 # Release notes - Ludeo Company - Unity SDK 
+# v4.3.3
+- **Description:**
+	- Switched to the CoreSDK 4.2.8
+		- The Windows Core SDK DLL is now Authenticode-signed and carries company, product, description and copyright fields in its file properties
+	- Renamed the Steam-related `LudeoSettings` inspector labels to "Run Without Steam Client", "Steam User Id" and "Beta Version Name", and reworded their tooltips
+- **Impact:**
+	- Inspector labels only; the serialized field names are unchanged
+-**Action Required:**
 # v4.3.2
 - **Description:**
 	- Switched to the CoreSDK 4.2.7
