@@ -1,0 +1,12 @@
+{
+  "name": "com.ludeosdk.unity",
+  "displayName": "Ludeo SDK",
+  "version": "4.3.4",
+  "description": "The Ludeo SDK for Unity is a powerful tool for game studios that enables players to generate a new form of gaming content by capturing and sharing their highlight moments within a game, which other players can discover and replay. The SDK is simple to install and configure, offering many features for enhancing user engagement and community development.",
+  "author": "Ludeo",
+  "documentationURL": "https://dev.ludeo.com",
+  "changelogURL": "https://dev.ludeo.com",
+  "licenseURL": "https://dev.ludeo.com",
+  "unity": "2021.2",
+  "type": "library"
+}
